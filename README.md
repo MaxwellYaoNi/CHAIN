@@ -35,7 +35,7 @@
 
 ## Code For FastGANDBig
 
-Please refer to the [CHAIN-FastGANDBig](
+Please refer to the [CHAIN-FastGANDBig](https://github.com/MaxwellYaoNi/CHAIN/tree/main/FastGANDBig)
 
 ## Citation
 
