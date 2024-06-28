@@ -20,7 +20,7 @@
     <a href='https://arxiv.org/abs/2404.00521'>
       <img src='https://img.shields.io/badge/Paper-arXiv-80261B?style=flat&logo=Googledocs&logoColor=white' alt='Paper arXiv'>
     </a>
-    <a href='https://maxwellyaoni.github.io/home/documents/CHAIN_Slides.pdf'>
+    <a href='https://maxwellyaoni.github.io/home/documents/Chain_Slides.pdf'>
       <img src='https://img.shields.io/badge/Slides-2AA26C?style=flat&logo=Slides&logoColor=white' alt='Slides'>
     </a>
     <a href='https://maxwellyaoni.github.io/home/documents/Chain_Poster.pdf'>
