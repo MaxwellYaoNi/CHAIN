@@ -37,9 +37,8 @@
  To enhance generalization of Data-Efficient GANs, we can (Lemma 3.1) lower the discrepancy between real and fake data and (Prop. 3.1) reduce the gradient on discriminator weights. BatchNormalization in the discriminator, when applied separately to real and fake batch data, can reduce this discrepancy through centering and scaling. However, these steps can lead to gradient explosion (Theorems 3.1 and 3.2). We address this by replacing the centering step with zero-mean regularization (0MR) and the scaling step with adaptive root mean square normalization (ARMS), forming CHAIN. Theorem 3.3 demonstrates that CHAIN reduces weight and latent feature gradients, promoting generalization and training stability while aiding convergence through lower gradients to the generator. 
  
 
-## Code For FastGANDBig
+## Code For [CHAIN-FastGANDBig](https://github.com/MaxwellYaoNi/CHAIN/tree/main/FastGANDBig)
 
-Please refer to the [CHAIN-FastGANDBig](https://github.com/MaxwellYaoNi/CHAIN/tree/main/FastGANDBig)
 
 ## Citation
 
