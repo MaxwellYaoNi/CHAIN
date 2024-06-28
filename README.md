@@ -33,20 +33,19 @@
 </p>
 <br />
 
-## Simple Code Example
+## Code For FastGANDBig
 
-## Full Code will come soon...
 
 ## Citation
 
 If you use the theories or code for your research, please cite with the below:
 ```
-@inproceedings{
-    ni2023nice,
-    title={{NICE}: NoIse-modulated Consistency rEgularization for Data-Efficient {GAN}s},
-    author={Yao Ni and Piotr Koniusz},
-    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-    year={2023},
-    url={https://openreview.net/forum?id=YFW6MVGVTn}
+@InProceedings{Ni_2024_CVPR,
+    author    = {Ni, Yao and Koniusz, Piotr},
+    title     = {CHAIN: Enhancing Generalization in Data-Efficient GANs via lipsCHitz continuity constrAIned Normalization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {6763-6774}
 }
 ```
