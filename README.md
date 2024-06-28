@@ -27,7 +27,7 @@
       <img src='https://img.shields.io/badge/Poster-2AA26C?style=flat&logo=Packt&logoColor=white' alt='Slides'>
     </a>
     <a href='https://www.youtube.com/watch?v=_f7X5_zT_lA'>
-      <img src='https://img.shields.io/badge/Video-NeurIPS-634687?style=flat&logo=youtube&logoColor=white' alt='Video NeurIPS'>
+      <img src='https://img.shields.io/badge/Video-NeurIPS-634687?style=flat&logo=youtube&logoColor=white' alt='Video Youtube'>
     </a>
   </p>
 </p>
