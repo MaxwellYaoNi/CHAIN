@@ -35,6 +35,7 @@
 
 ## Code For FastGANDBig
 
+Please refer to the [CHAIN-FastGANDBig](
 
 ## Citation
 
