@@ -17,8 +17,8 @@
   </p>
   
   <p align="center">
-    <a href='https://openreview.net/forum?id=YFW6MVGVTn'>
-      <img src='https://img.shields.io/badge/Paper-OpenReview-80261B?style=flat&logo=Googledocs&logoColor=white' alt='Paper OpenReview'>
+    <a href='https://arxiv.org/abs/2404.00521'>
+      <img src='https://img.shields.io/badge/Paper-arXiv-80261B?style=flat&logo=Googledocs&logoColor=white' alt='Paper arXiv'>
     </a>
     <a href='https://maxwellyaoni.github.io/home/documents/CHAIN_Slides.pdf'>
       <img src='https://img.shields.io/badge/Slides-2AA26C?style=flat&logo=Slides&logoColor=white' alt='Slides'>
@@ -27,7 +27,7 @@
       <img src='https://img.shields.io/badge/Poster-2AA26C?style=flat&logo=Packt&logoColor=white' alt='Slides'>
     </a>
     <a href='https://www.youtube.com/watch?v=_f7X5_zT_lA'>
-      <img src='https://img.shields.io/badge/Video-NeurIPS-634687?style=flat&logo=youtube&logoColor=white' alt='Video Youtube'>
+      <img src='https://img.shields.io/badge/Video-Youtube-FA1D1D?style=flat&logo=youtube&logoColor=white' alt='Video Youtube'>
     </a>
   </p>
 </p>
