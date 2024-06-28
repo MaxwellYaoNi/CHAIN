@@ -4,7 +4,7 @@
         CHAIN: Enhancing Generalization in Data-Efficient GANs via lipsCHitz continuity constrAIned Normalization
     </h1>
     <p align="center">
-    <img src="assets/nice_pipeline_final.jpg" alt="Overview" width="100%">
+    <img src="assets/chain_pipeline.jpg" alt="Overview" width="100%">
     </p>
 
   <p align="center">
