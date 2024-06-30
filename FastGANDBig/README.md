@@ -27,3 +27,37 @@ python3 train.py \
 ### some experience that could be used for better performance. 
 1. You can adjust --chain_blocks to be like 123456, 2345, 23456, 12345, large data requires less blocks
 2. 
+
+# Citations
+If you find this useful, please cite the paper!
+
+```
+@InProceedings{Ni_2024_CVPR,
+    author    = {Ni, Yao and Koniusz, Piotr},
+    title     = {CHAIN: Enhancing Generalization in Data-Efficient GANs via lipsCHitz continuity constrAIned Normalization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {6763-6774}
+}
+```
+
+```
+@inproceedings{liu2020towards,
+  title={Towards faster and stabilized gan training for high-fidelity few-shot image synthesis},
+  author={Liu, Bingchen and Zhu, Yizhe and Song, Kunpeng and Elgammal, Ahmed},
+  booktitle={International conference on learning representations},
+  year={2020}
+}
+```
+
+```
+@article{karras2020training,
+  title={Training generative adversarial networks with limited data},
+  author={Karras, Tero and Aittala, Miika and Hellsten, Janne and Laine, Samuli and Lehtinen, Jaakko and Aila, Timo},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={12104--12114},
+  year={2020}
+}
+```
