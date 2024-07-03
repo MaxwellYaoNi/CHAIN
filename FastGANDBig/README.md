@@ -1,6 +1,10 @@
 # Code For CHAIN+FastGANDBig
 
 ## 1. Download inception model and datasets
+```
+mkdir -p data/inception_model
+mkdir -p data/torch_real_moments
+```
 
 ### Download [Inception model](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/inception-2015-12-05.pt) provided by [StyleGAN2-ADA-Pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch) to path
 ```
