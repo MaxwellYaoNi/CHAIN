@@ -36,6 +36,7 @@ python3 train.py \
 ```
 2. To use the batch version of chain, change ```--chain_type chain_batch```. 
 3. When working with new datasets, adjust ```--chain_blocks``` to settings like ```2345``` or ```1234``` and vary ```--tau``` for better performance. It is recommanded to set ```--lbd``` to  ```20```.
+4. We test the code on pytorch/2.2.2, however, it's also workable on other version if the required modules are installed.
 
 # Citations
 If you find this useful, please cite the paper!
