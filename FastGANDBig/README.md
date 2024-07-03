@@ -1,36 +1,44 @@
 # Code For CHAIN+FastGANDBig
 
-### Download [Inception model](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/inception-2015-12-05.pt) to path
-```
-data/inception_model
-```
-The inception model is converted from Tensorflow to Pytorch by work [StyleGAN2-ADA-Pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch).
+## 1. Download inception model and datasets
 
-### Preparing your Data
- you can download [data](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view) provided by [FastGAN](https://github.com/odegeasslbc/FastGAN-pytorch?tab=readme-ov-file) and extract it into 
+### Download [Inception model](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/inception-2015-12-05.pt) provided by [StyleGAN2-ADA-Pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch) to path
+```
+data/inception_model/inception-2015-12-05.pt
+```
+The inception model is converted from the [Tensorflow weights](http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz) to Pytorch.
+
+### Download datasets
+Download [data](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view) provided by [FastGAN](https://github.com/odegeasslbc/FastGAN-pytorch?tab=readme-ov-file) and extract it into 
 ```
 data/[yourdataset]
 ```
+## 2. prepare moments and train GANs (using the shells dataset as an example)
 
-### Preparing the moments used for calculating FID
+### Prepare the moments for calculating FID
 ```
 python3 calculate_moments.py --data_path data/shells/img --moments_path data/torch_real_moments/shells_moments.npz
 ```
 
-### Runing the code
+### Run the code to train GANs
 ```
 python3 train.py \
 --path data/shells/img --dataset_name shells --moments_path data/torch_real_moments/shells_moments.npz \
---chain --chain_blocks 12345 --tau 0.5 --lbd 20
+--chain_type chain --chain_blocks 12345 --tau 0.5 --lbd 20 --lbd_p0 0.1
 ```
 
-### some experience that could be used for better performance. 
-1. You can adjust --chain_blocks to be like 123456, 2345, 23456, 12345, large data requires less blocks
-2. 
+## 3. Notes
+1. For datasets with very few images, like Shells, Skulls, and AnimeFace, it is recommended to use ```--lbd_p0 0.1```. For datasets with more images, like Pokemon and ArtPainting, use ```--lbd_p0=0``` and more training iterations for convergence and better performance.
+```
+python3 train.py \
+--path [datapath] --dataset_name [name] --moments_path [momentspath] \
+--chain_type chain --chain_blocks 12345 --tau 0.5 --lbd 20 --iter 200000
+```
+2. To use the batch version of chain, change ```--chain_type chain_batch```. 
+3. When working with new datasets, adjust ```--chain_blocks``` to settings like ```2345``` or ```1234``` and vary ```--tau``` for better performance. It is recommanded to set ```--lbd``` to  ```20```.
 
 # Citations
 If you find this useful, please cite the paper!
-
 ```
 @InProceedings{Ni_2024_CVPR,
     author    = {Ni, Yao and Koniusz, Piotr},
