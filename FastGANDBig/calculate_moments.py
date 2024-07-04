@@ -1,11 +1,10 @@
 import argparse, os
 
 import torch
-
-import swan
-from swan import EasyDict
 from torchvision import transforms
 from PIL import Image
+from operation import EasyDict, MinSizeCenterCrop
+from torch_inception_metrics import ImageWrapper,TorchInceptionMetrics
 
 
 def read_all_images(data_path, resolution, center_crop):
@@ -19,7 +18,7 @@ def read_all_images(data_path, resolution, center_crop):
         else:
             print(image_path)
     transform_list = []
-    if center_crop: transform_list.append(swan.MinSizeCenterCrop())
+    if center_crop: transform_list.append(MinSizeCenterCrop())
     transform_list += [
         transforms.Resize((int(resolution), int(resolution))),
         transforms.PILToTensor()
@@ -56,9 +55,9 @@ if __name__ == "__main__":
     config = EasyDict(vars(parser.parse_args()))
     images = read_all_images(config.data_path, config.resolution, config.center_crop)
     images = images.int()
-    image_wrapper = swan.ImageWrapper(images)
+    image_wrapper = ImageWrapper(images)
     num_gpus = 1
-    metrics_calculator = swan.TorchInceptionMetrics(config.inception_path, batch_size=100, num_gpus=num_gpus, torch_for_fid=False, eps=1e-6)
+    metrics_calculator = TorchInceptionMetrics(config.inception_path, batch_size=100, num_gpus=num_gpus, torch_for_fid=False, eps=1e-6)
     metrics_calculator.load_train_fid_moments(config.moments_path, image_wrapper, verbose=True)
     _, _, FID = metrics_calculator.get_IS_tFID(image_wrapper, verbose=True)
     # images = images + (torch.rand(*images.shape)*5).int()
