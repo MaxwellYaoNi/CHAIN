@@ -32,7 +32,7 @@ python3 train.py \
 ```
 
 ## 3. Notes
-1. For datasets with very few images, like Shells, Skulls, and AnimeFace, it is recommended to use ```--lbd_p0 0.1```. For datasets with more images, like Pokemon and ArtPainting, use ```--lbd_p0=0``` and more training iterations for convergence and better performance.
+1. For datasets with very few images, like Shells, Skulls, and AnimeFace, it is recommended to use ```--lbd_p0 0.1```. For datasets with more images, like ArtPainting, use ```--lbd_p0=0``` and more training iterations for convergence and better performance.
 ```
 python3 train.py \
 --path [datapath] --dataset_name [name] --moments_path [momentspath] \
