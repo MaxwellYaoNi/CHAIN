@@ -39,8 +39,6 @@
 
 ## Code for [CHAIN-FastGANDBig](https://github.com/MaxwellYaoNi/CHAIN/tree/main/FastGANDBig)
 
-## Code for CHAIN-BigGAN is being reorganized.
-
 ## Citation
 
 If you use the theories or code for your research, please cite with the below:
